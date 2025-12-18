@@ -5,10 +5,11 @@ const app = express();
 app.use(express.json());
 
 // === CONFIGURATION ===
+// Railway env vars: GMAIL_ADDRESS, GMAIL_APP_PASSWORD
 const CONFIG = {
   TO_EMAIL: 'info@keepitcut.com',
-  FROM_EMAIL: process.env.GMAIL_ADDRESS || 'kramtelmot@gmail.com',
-  GMAIL_ADDRESS: process.env.GMAIL_ADDRESS || 'kramtelmot@gmail.com',
+  FROM_EMAIL: process.env.GMAIL_ADDRESS || 'techtomlet@gmail.com',
+  GMAIL_ADDRESS: process.env.GMAIL_ADDRESS || 'techtomlet@gmail.com',
   GMAIL_APP_PASSWORD: process.env.GMAIL_APP_PASSWORD,
 };
 
