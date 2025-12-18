@@ -1,0 +1,33 @@
+{
+  "function_name": "cancel_membership",
+  "description": "Cancel a customer's membership. Collects their information and sends cancellation request to info@keepitcut.com. Customer can continue using membership until renewal date.",
+  "url": "https://your-modal-deployment-url.com/cancel",
+  "speak_on_send": false,
+  "speak_on_response": true,
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "Customer's full name (first and last)"
+      },
+      "phone": {
+        "type": "string",
+        "description": "Customer's phone number"
+      },
+      "email": {
+        "type": "string",
+        "description": "Customer's email address"
+      },
+      "reason": {
+        "type": "string",
+        "description": "Reason for cancelling membership (optional but helpful)"
+      },
+      "renewal_date": {
+        "type": "string",
+        "description": "Membership renewal date if known (format: YYYY-MM-DD)"
+      }
+    },
+    "required": ["name", "phone", "email"]
+  }
+}

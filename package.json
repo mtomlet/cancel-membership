@@ -1,0 +1,13 @@
+{
+  "name": "cancel-membership",
+  "version": "1.0.0",
+  "description": "Cancel membership requests - sends email to info@keepitcut.com",
+  "main": "cancel-membership.js",
+  "scripts": {
+    "start": "node cancel-membership.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.7"
+  }
+}
